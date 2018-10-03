@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Esercitazione2", "Esercitazione2\Esercitazione2.vcxproj", "{1C7F20EE-65CF-4F41-AEA7-6244772E9C9E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathLib", "MathLib\MathLib.vcxproj", "{58B0E72B-D3AF-4937-8BFE-EC344CF64B0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C7F20EE-65CF-4F41-AEA7-6244772E9C9E}.Debug|x64.ActiveCfg = Debug|x64
+		{1C7F20EE-65CF-4F41-AEA7-6244772E9C9E}.Debug|x64.Build.0 = Debug|x64
+		{1C7F20EE-65CF-4F41-AEA7-6244772E9C9E}.Release|x64.ActiveCfg = Release|x64
+		{1C7F20EE-65CF-4F41-AEA7-6244772E9C9E}.Release|x64.Build.0 = Release|x64
+		{58B0E72B-D3AF-4937-8BFE-EC344CF64B0D}.Debug|x64.ActiveCfg = Debug|x64
+		{58B0E72B-D3AF-4937-8BFE-EC344CF64B0D}.Debug|x64.Build.0 = Debug|x64
+		{58B0E72B-D3AF-4937-8BFE-EC344CF64B0D}.Release|x64.ActiveCfg = Release|x64
+		{58B0E72B-D3AF-4937-8BFE-EC344CF64B0D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F952215-B583-4332-9206-92F8DE5F48E2}
+	EndGlobalSection
+EndGlobal

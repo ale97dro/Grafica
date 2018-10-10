@@ -27,7 +27,7 @@ int main()
 	std::cout << "Lunghezza a: " << a.length() << std::endl;
 
 
-	
+
 	//Normalizza
 	std::cout << "Lunghezza b: " << b.length() << std::endl;
 	b.normalization();

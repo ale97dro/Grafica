@@ -7,14 +7,14 @@
 #define LIB_NAME      "MathLib v1.0"  ///< Library credits
 #define LIB_VERSION   10                              ///< Library version (divide by 10)
 
-#ifdef _WINDOWS 	
+#ifdef _WINDOWS
    // Export API:
    // Specifies i/o linkage (VC++ spec):
 #ifdef MATHLIB_EXPORTS
 #define LIB_API __declspec(dllexport)
 #else
 #define LIB_API __declspec(dllimport)
-#endif      	
+#endif
 #else // Under Linux
 #define LIB_API  // Dummy declaration
 #endif

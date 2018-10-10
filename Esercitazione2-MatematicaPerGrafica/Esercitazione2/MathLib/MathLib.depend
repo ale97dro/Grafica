@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1538570863 source:/home/alessandro/Scrivania/Grafica/Esercitazione 2 - Matematica Per Grafica/Esercitazione2/MathLib/Vector.cpp
+	"Vector.h"
+	<Windows.h>
+
+1538574993 /home/alessandro/Scrivania/Grafica/Esercitazione 2 - Matematica Per Grafica/Esercitazione2/MathLib/Vector.h
+	<iostream>
+	<math.h>
+
+1538570863 source:/home/alessandro/Scrivania/Grafica/Esercitazione2-MatematicaPerGrafica/Esercitazione2/MathLib/Vector.cpp
+	"Vector.h"
+	<Windows.h>
+
+1538574993 /home/alessandro/Scrivania/Grafica/Esercitazione2-MatematicaPerGrafica/Esercitazione2/MathLib/Vector.h
+	<iostream>
+	<math.h>
+

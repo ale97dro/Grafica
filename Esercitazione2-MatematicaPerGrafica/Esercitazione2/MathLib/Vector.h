@@ -30,6 +30,16 @@ public:
 
 	}
 
+
+//	Point(const Point &p2)
+
+	Vector(const Vector& v)
+		:m_x{ v.m_x }, m_y{ v.m_y }, m_z{ v.m_z }
+	{
+
+	}
+
+
 	//Costruttore per interi
 	Vector(int x, int y, int z);
 
@@ -44,14 +54,23 @@ public:
 	float length();
 	void normalization();
 
+	float x();
+	float y();
+	float z();
+
 
 	void stampa();
+
+	float operator[](int i);
+	
 
 
 private:
 	float m_x;
 	float m_y;
 	float m_z;
+
+	//friend class Matrix;
 
 };
 

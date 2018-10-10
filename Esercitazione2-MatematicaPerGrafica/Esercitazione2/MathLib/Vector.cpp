@@ -78,14 +78,42 @@ void LIB_API Vector::normalization()
 	m_z /= _length;
 }
 
+float Vector::x()
+{
+	return m_x;
+}
+
+float Vector::y()
+{
+	return m_y;
+}
+
+float Vector::z()
+{
+	return m_z;
+}
+
 void LIB_API Vector::stampa()
 {
 	std::cout << m_x << ", " << m_y << ", " << m_z << std::endl;
 }
 
+float Vector::operator[](int i)
+{
+	switch (i)
+	{
+	case 0:
+		return m_x;
+	case 1:
+		return m_y;
+	case 2:
+		return m_z;
+	}
+}
+
 Vector::Vector(int x, int y, int z)
 {
-	m_x = x;
-	m_y = y;
-	m_z = z;
+	m_x = (float)x;
+	m_y = (float)y;
+	m_z = (float)z;
 }

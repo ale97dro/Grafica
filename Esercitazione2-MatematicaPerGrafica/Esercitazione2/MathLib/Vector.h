@@ -9,7 +9,7 @@
 
 #ifdef _WINDOWS
    // Export API:
-   // Specifies i/o linkage (VC++ spec):
+   // Specifies i/o linkage (VC++ spec): //TODO cambiare il nome sotto
 #ifdef MATHLIB_EXPORTS
 #define LIB_API __declspec(dllexport)
 #else
@@ -59,7 +59,7 @@ public:
 	float z();
 
 
-	void stampa();
+	void print();
 
 	float operator[](int i);
 	

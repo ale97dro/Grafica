@@ -15,9 +15,9 @@ public:
 	~Matrix();
 	
 
-
-	Vector operator*(Vector v) const;
-	Matrix operator*(Matrix m) const;
+	Matrix operator+(Matrix &m);
+	Vector operator*(Vector &v);
+	Matrix operator*(Matrix &m);
 
 	Matrix transposed();
 
@@ -30,5 +30,6 @@ private:
 	int m_column;
 
 	float mult_row(const float row[DIMENSION], Vector v) const;
+	float mult_row(const float row[DIMENSION], const float row2[DIMENSION]) const;
 };
 

@@ -93,7 +93,7 @@ float Vector::z()
 	return m_z;
 }
 
-void LIB_API Vector::stampa()
+void LIB_API Vector::print()
 {
 	std::cout << m_x << ", " << m_y << ", " << m_z << std::endl;
 }

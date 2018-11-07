@@ -29,7 +29,7 @@
 // GLOBALS //
 /////////////
 
-   // Rotation angle:
+// Rotation angle:
 float angle = 10.0f;
 float distance = -45.0f;
 int windowId;
@@ -46,83 +46,11 @@ bool changeColor = false;
 
 void drawCube(float edge)
 {
-	//float r = ((float)(rand() % 10)) / 9.0f;
-	//float g = ((float)(rand() % 10)) / 9.0f;
-	//float b = ((float)(rand() % 10)) / 9.0f;
-
-	//glBegin(GL_TRIANGLE_STRIP);
-
-
-	//if (changeColor)
-	//{
-	//	glColor3f(r, g, b);
-	//	changeColor = false;
-	//}
-
-	//float size = edge / 2.0f;
-
-	//// Back:   
-	//glBegin(GL_TRIANGLE_STRIP);
-	////glColor3ub(faceColor[0][0], faceColor[0][1], faceColor[0][2]);
-	//glVertex3f(size, 0, -size);
-	//glVertex3f(-size, 0, -size);
-	//glVertex3f(size, edge, -size);
-	//glVertex3f(-size, edge, -size);
-	//glEnd();
-
-	//// Front:	      
-	//glBegin(GL_TRIANGLE_STRIP);
-	////glColor3ub(faceColor[1][0], faceColor[1][1], faceColor[1][2]);
-	//glVertex3f(-size, 0, size);
-	//glVertex3f(size, 0, size);
-	//glVertex3f(-size, edge, size);
-	//glVertex3f(size, edge, size);
-	//glEnd();
-
-	//// Left:	      
-	//glBegin(GL_TRIANGLE_STRIP);
-	////glColor3ub(faceColor[2][0], faceColor[2][1], faceColor[2][2]);
-	//glVertex3f(-size, edge, -size);
-	//glVertex3f(-size, 0, -size);
-	//glVertex3f(-size, edge, size);
-	//glVertex3f(-size, 0, size);
-	//glEnd();
-
-	//// Right:	      
-	//glBegin(GL_TRIANGLE_STRIP);
-	////glColor3ub(faceColor[3][0], faceColor[3][1], faceColor[3][2]);
-	//glVertex3f(size, 0, -size);
-	//glVertex3f(size, edge, -size);
-	//glVertex3f(size, 0, size);
-	//glVertex3f(size, edge, size);
-	//glEnd();
-
-	//// Bottom:	      
-	//glBegin(GL_TRIANGLE_STRIP);
-	////glColor3ub(faceColor[4][0], faceColor[4][1], faceColor[4][2]);
-	//glVertex3f(-size, 0, -size);
-	//glVertex3f(size, 0, -size);
-	//glVertex3f(-size, 0, size);
-	//glVertex3f(size, 0, size);
-	//glEnd();
-
-	//// Top:	      
-	//glBegin(GL_TRIANGLE_STRIP);
-	////glColor3ub(faceColor[4][0], faceColor[4][1], faceColor[4][2]);
-	//glVertex3f(size, edge, -size);
-	//glVertex3f(-size, edge, -size);
-	//glVertex3f(size, edge, size);
-	//glVertex3f(-size, edge, size);
-	//glEnd();
-
 	float r = ((float)(rand() % 10)) / 9.0f;
 	float g = ((float)(rand() % 10)) / 9.0f;
 	float b = ((float)(rand() % 10)) / 9.0f;
 
-
 	glBegin(GL_TRIANGLE_STRIP);
-
-	glColor3f(0.0f, 0.0f, 1.0f);
 
 
 	if (changeColor)
@@ -131,37 +59,109 @@ void drawCube(float edge)
 		changeColor = false;
 	}
 
-	glVertex3f(-10.0f, -10.0f, 10.0f);
-	glVertex3f(10.0f, -10.0f, 10.0f);
-	glVertex3f(-10.0f, 10.0f, 10.0f);
-	glVertex3f(10.0f, 10.0f, 10.0f);
+	float size = edge / 2.0f;
 
-	//glColor3f(0.0f, 1.0f, 0.0f);
-	glVertex3f(-10.0f, 10.0f, -10.0f);
-	glVertex3f(10.0f, 10.0f, -10.0f);
-
-	//glColor3f(0.0f, 1.0f, 1.0f);
-	glVertex3f(-10.0f, -10.0f, -10.0f);
-	glVertex3f(10.0f, -10.0f, -10.0f);
-	glEnd();
-
+	// Back:   
 	glBegin(GL_TRIANGLE_STRIP);
-	//glColor3f(1.0f, 0.0f, 0.0f);
-
-	glVertex3f(-10.0f, 10.0f, 10.0f);
-	glVertex3f(-10.0f, 10.0f, -10.0f);
-	glVertex3f(-10.0f, -10.0f, 10.0f);
-	glVertex3f(-10.0f, -10.0f, -10.0f);
-
-	//glColor3f(0.5f, 1.0f, 1.0f);
-	glVertex3f(10.0f, -10.0f, 10.0f);
-	glVertex3f(10.0f, -10.0f, -10.0f);
-
-	//glColor3f(1.0f, 1.0f, 0.0f);
-	glVertex3f(10.0f, 10.0f, 10.0f);
-	glVertex3f(10.0f, 10.0f, -10.0f);
-
+	//glColor3ub(faceColor[0][0], faceColor[0][1], faceColor[0][2]);
+	glVertex3f(size, 0, -size);
+	glVertex3f(-size, 0, -size);
+	glVertex3f(size, edge, -size);
+	glVertex3f(-size, edge, -size);
 	glEnd();
+
+	// Front:	      
+	glBegin(GL_TRIANGLE_STRIP);
+	//glColor3ub(faceColor[1][0], faceColor[1][1], faceColor[1][2]);
+	glVertex3f(-size, 0, size);
+	glVertex3f(size, 0, size);
+	glVertex3f(-size, edge, size);
+	glVertex3f(size, edge, size);
+	glEnd();
+
+	// Left:	      
+	glBegin(GL_TRIANGLE_STRIP);
+	//glColor3ub(faceColor[2][0], faceColor[2][1], faceColor[2][2]);
+	glVertex3f(-size, edge, -size);
+	glVertex3f(-size, 0, -size);
+	glVertex3f(-size, edge, size);
+	glVertex3f(-size, 0, size);
+	glEnd();
+
+	// Right:	      
+	glBegin(GL_TRIANGLE_STRIP);
+	//glColor3ub(faceColor[3][0], faceColor[3][1], faceColor[3][2]);
+	glVertex3f(size, 0, -size);
+	glVertex3f(size, edge, -size);
+	glVertex3f(size, 0, size);
+	glVertex3f(size, edge, size);
+	glEnd();
+
+	// Bottom:	      
+	glBegin(GL_TRIANGLE_STRIP);
+	//glColor3ub(faceColor[4][0], faceColor[4][1], faceColor[4][2]);
+	glVertex3f(-size, 0, -size);
+	glVertex3f(size, 0, -size);
+	glVertex3f(-size, 0, size);
+	glVertex3f(size, 0, size);
+	glEnd();
+
+	// Top:	      
+	glBegin(GL_TRIANGLE_STRIP);
+	//glColor3ub(faceColor[4][0], faceColor[4][1], faceColor[4][2]);
+	glVertex3f(size, edge, -size);
+	glVertex3f(-size, edge, -size);
+	glVertex3f(size, edge, size);
+	glVertex3f(-size, edge, size);
+	glEnd();
+
+	//float r = ((float)(rand() % 10)) / 9.0f;
+	//float g = ((float)(rand() % 10)) / 9.0f;
+	//float b = ((float)(rand() % 10)) / 9.0f;
+
+
+	//glBegin(GL_TRIANGLE_STRIP);
+
+	//glColor3f(0.0f, 0.0f, 1.0f);
+
+
+	//if (changeColor)
+	//{
+	//	glColor3f(r, g, b);
+	//	changeColor = false;
+	//}
+
+	//glVertex3f(-10.0f, -10.0f, 10.0f);
+	//glVertex3f(10.0f, -10.0f, 10.0f);
+	//glVertex3f(-10.0f, 10.0f, 10.0f);
+	//glVertex3f(10.0f, 10.0f, 10.0f);
+
+	////glColor3f(0.0f, 1.0f, 0.0f);
+	//glVertex3f(-10.0f, 10.0f, -10.0f);
+	//glVertex3f(10.0f, 10.0f, -10.0f);
+
+	////glColor3f(0.0f, 1.0f, 1.0f);
+	//glVertex3f(-10.0f, -10.0f, -10.0f);
+	//glVertex3f(10.0f, -10.0f, -10.0f);
+	//glEnd();
+
+	//glBegin(GL_TRIANGLE_STRIP);
+	////glColor3f(1.0f, 0.0f, 0.0f);
+
+	//glVertex3f(-10.0f, 10.0f, 10.0f);
+	//glVertex3f(-10.0f, 10.0f, -10.0f);
+	//glVertex3f(-10.0f, -10.0f, 10.0f);
+	//glVertex3f(-10.0f, -10.0f, -10.0f);
+
+	////glColor3f(0.5f, 1.0f, 1.0f);
+	//glVertex3f(10.0f, -10.0f, 10.0f);
+	//glVertex3f(10.0f, -10.0f, -10.0f);
+
+	////glColor3f(1.0f, 1.0f, 0.0f);
+	//glVertex3f(10.0f, 10.0f, 10.0f);
+	//glVertex3f(10.0f, 10.0f, -10.0f);
+
+	//glEnd();
 }
 
 
@@ -177,7 +177,7 @@ void displayCallback()
 
 	//glClearDepth(float);
 
-	float dimension = 20.0f;
+	float dimension = 10.0f;
 
 	// Set a matrix to move our triangle: 
 	//glm::mat4 translation = glm::translate(glm::mat4(), glm::vec3(0.0f, 0.0f, distance));
@@ -195,7 +195,6 @@ void displayCallback()
 	// Pass a triangle (object coordinates: the triangle is centered around the origin):    
 	drawCube(dimension); //primo cubo
 
-
 	for (int i = 0; i < 10; i++)
 	{
 		f = f * translateTowerCube * rotationY * scaling;
@@ -203,12 +202,17 @@ void displayCallback()
 		drawCube(dimension);
 	}
 
-	if(!spacePressed)
+
+	if (!spacePressed)
+	{
 		angle += 0.1f;
+		glutPostWindowRedisplay(windowId);
+	}
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //wireframe
 
 	// Swap this context's buffer:     
 	glutSwapBuffers();
-	glutPostWindowRedisplay(windowId);
 }
 
 
@@ -227,8 +231,6 @@ void reshapeCallback(int width, int height)
 	glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)width / (float)height, 1.0f, 1000.0f);
 	glLoadMatrixf(glm::value_ptr(projection));
 	glMatrixMode(GL_MODELVIEW);
-
-	//glutPostWindowRedisplay(windowId);
 }
 
 
@@ -277,11 +279,10 @@ void keyboardCallback(unsigned char key, int x, int y)
 	case 'r':
 		changeColor = true;
 		glutPostWindowRedisplay(windowId);
-		//drawCube(10.0f);
 		break;
 	}
 
-	
+	glutPostWindowRedisplay(windowId);
 }
 
 
